@@ -23,6 +23,10 @@ dependencies {
     }
 
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-aop', version: '2.2.8.RELEASE'
+    compile group: 'org.springframework', name: 'spring-aop', version: '5.2.5.RELEASE'
+
 }
 
 test {

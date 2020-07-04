@@ -1,6 +1,7 @@
 package spring.aop.service.aop;
 
 import org.springframework.stereotype.Service;
+import spring.aop.service.pattern.Perflogging;
 
 @Service
 public class PengsooServiceImpl implements PengsooService {
@@ -11,6 +12,7 @@ public class PengsooServiceImpl implements PengsooService {
         System.out.println("PENG HI");
     }
 
+    @Perflogging
     @Override
     public void pengBye() {
         System.out.println("PENG BYE");
